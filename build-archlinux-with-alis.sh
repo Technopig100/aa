@@ -126,7 +126,7 @@ tput setaf 2
 echo "Phase 3 :"
 echo "- Deleting the build folder if one exists"
 echo "- Copying the Archiso folder to build folder"
-echo "- Cloning ALIS"
+echo "- Cloning ARCHLIS"
 tput sgr0
 echo "################################################################## "
 echo
@@ -139,7 +139,7 @@ echo
 	mkdir $buildFolder
 	cp -r /usr/share/archiso/configs/releng/ $buildFolder/archiso
 	echo
-	echo "Git clone ALIS + ALIS-DEV"
+	echo "Git clone ARCHLIS + ALIS-DEV"
 	mkdir $buildFolder/archiso/airootfs/archlis
 	git https://github.com/Technopig100/archlis.git $buildFolder/archiso/airootfs/archlis
 	mkdir $buildFolder/archiso/airootfs/alis-dev
